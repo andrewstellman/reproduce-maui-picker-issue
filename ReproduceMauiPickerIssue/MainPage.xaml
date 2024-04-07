@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReproduceMauiPickerIssue.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Picker x:Name="BirdPicker" Title="Pick a bird" />
+
+            <Button x:Name="AddBird" Text="Add a bird"
+                Margin="0,0,0,20" SemanticProperties.Hint="Adds a bird"
+                Clicked="AddBird_Clicked"/>
+
+            <Label x:Name="Birds"
+                    Padding="10" MinimumWidthRequest="150"
+                    TextColor="White" BackgroundColor="DarkBlue" 
+                    SemanticProperties.Description="Shows the added birds" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
